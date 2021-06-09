@@ -1,1 +1,0 @@
-There are three classes; Effusion (170), Normal(179), and Tube(96) of eardrum  images. Simply use ten fold cross validation for testing and left out set for training and validation. 'Image Names and Labels.xlsx' file contains the labels for each image. 

@@ -22,7 +22,15 @@ Based on picture data from "OtoMatch: Content-based eardrum image retrieval usin
 ## Executive Summary
 [back to top](#Ear-Infection-Identifier)
 
-The goal of this analysis is to see if a neural network model can accurately identify infected eardrum from noninfected eardrums. The metrics being used are accuracy, precision, and recall. These are appropiate since we want to reduce the number false negatives in the model. Initially, I used the dataset from  "OtoMatch: Content-based eardrum image retrieval using deep learning" with their original the categories of effusion, TM tube and normal eardrum images. The models I performed overfit on training data and did not perform as well on testing data. The pretrained models used were MobileNetV2, VGG16, Xception, InceptionV3. These pretrained networks were not successful in improving metric scores either. The most successful model was a neural network model with convolutional layers, augmented data and average pooling. This model had the highest test recall, precision, and accuracy score with recall score of 0.6730, preceision score of 0.6859 and accuracy test score of 0.6855. However, this model was very overfit to training data. Next steps I would like to train a neural network to identify images into these five categories:
+The goal of this analysis is to see if a neural network model can accurately identify infected eardrum from noninfected eardrums. The metrics being used are accuracy, precision, and recall. These are appropiate since we want to reduce the number false negatives in the model. Initially, I used the dataset from  "OtoMatch: Content-based eardrum image retrieval using deep learning" with their original the categories of effusion, TM tube and normal eardrum images. The models I performed overfit on training data and did not perform as well on testing data. The pretrained models used were MobileNetV2, VGG16, Xception, InceptionV3. These pretrained networks were not successful in improving metric scores either. The most successful model was a neural network model 12 with convolutional layers, augmented data and max pooling. This model had the highest test recall, precision, and accuracy score: 
+
+test_accuracy max: 0.666700
+
+test_precision max: 0.675300
+
+test_recall max: 0.642000
+
+However, this model was very overfit to training data. Next steps I would like to train a neural network to identify images into these five categories:
 
 1) Effusion: Showing signs of not infected fluid (clear or serous fluid) behind the eardrum
 2) Otitis Media: Showing signs of infected eardum (purulent fluid) behind the eardrum
@@ -77,7 +85,7 @@ Success for this project would be to accurately indicate:
 
 Data downloaded from "OtoMatch: Content-based eardrum image retrieval using deep learning" at https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0232776.
 
-The picture data was placed into three categories already from the download. The three categories are pictures of ears with tympanostomy tubes(TM tubes) with 96 images, healthy(normal) eardrums with 179 images and eardrums with fluid(infected and noninfected fluid)behind the eardrum with 170 images.
+The picture data was placed into three categories already from the download. The three categories are pictures of ears with tympanostomy tubes(TM tubes) with 96 images, healthy(normal) eardrums with 179 images and eardrums with fluid(infected and noninfected fluid)behind the eardrum with 179 images.
 
 The previous authors of the research study had already performed data augmentation by rotating and scaling images. The previous authors had also preprocessed the images to isolate the region of interest.
 
