@@ -89,7 +89,7 @@ The picture data was placed into three categories already from the download. The
 
 The previous authors of the research study had already performed data augmentation by rotating and scaling images. The previous authors had also preprocessed the images to isolate the region of interest.
 
-I split the three categories into test and train set with 30% of images going to test set and 70% for training. I then used 20% of training set for validation. 
+I split the three categories into test and train set with 20% of images going to test set and 70% for training. I then used 20% of training set for validation. 
 
 I did inital modeling on those categoires and then I resorted the images into 5 different categories:
 
