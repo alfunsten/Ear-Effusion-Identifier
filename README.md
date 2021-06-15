@@ -36,7 +36,7 @@ After using data from "OtoMatch: Content-based eardrum image retrieval using dee
 ## File Directory
 [back to top](#Ear-Infection-Identifier)
 
-05-Project<br />
+Ear-Infection-Identifier<br />
 |<br />
 |__ code<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ 00_table_of_contents.ipynb <br />
